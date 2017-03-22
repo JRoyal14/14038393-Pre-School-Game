@@ -23,11 +23,20 @@ class DraggedImageView: UIImageView {
         let dy = currentLocation!.y - startLocation!.y
         
         self.center = CGPointMake(self.center.x+dx, self.center.y+dy)
+    }
+    
+    func shake() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 10
+        animation.autoreverses = true
+        animation.fromValue = NSValue(CGPoint: CGPoint(x: self.center.x - 4, y: self.center.y))
+        animation.toValue = NSValue( CGPoint: CGPoint(x: self.center.x + 4, y: self.center.y))
+        
+        self.layer.addAnimation(animation, forKey: "position")
         
     }
-
-
-
+    
 }
 
 
@@ -72,6 +81,7 @@ class ViewController: UIViewController {
     @IBOutlet var Apple9: DraggedImageView!
     @IBOutlet var Plate: UIImageView!
     
+    @IBOutlet weak var StarShake1: StarMovement!
     
     
     
@@ -83,14 +93,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         RandomQuestions()
         Hide()
+        Apple1.shake()
+        Apple2.shake()
+        Apple3.shake()
+        Apple4.shake()
+        Apple5.shake()
+        Apple6.shake()
+        Apple7.shake()
+        Apple8.shake()
+        Apple9.shake()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
     
     func RandomQuestions(){
         
@@ -128,10 +147,13 @@ class ViewController: UIViewController {
     func Hide(){
         LabelEnd.hidden = true
         Next.hidden = true
+        StarShake1.hidden = true
     }
     func UnHide(){
         LabelEnd.hidden = false
         Next.hidden = false
+        StarShake1.hidden = false
+        
     }
     
     func ButtonHide(){
@@ -144,7 +166,7 @@ class ViewController: UIViewController {
         Apple7.hidden = true
         Apple8.hidden = true
         Apple9.hidden = true
-        Plate.hidden = true
+        
         
         
         Button0.hidden = true
@@ -169,7 +191,7 @@ class ViewController: UIViewController {
         Apple7.hidden = false
         Apple8.hidden = false
         Apple9.hidden = false
-        Plate.hidden = false
+        
         
         Button0.hidden = false
         Button1.hidden = false
@@ -200,11 +222,14 @@ class ViewController: UIViewController {
         if (CorrectAnswer == "0"){
             UnHide()
             ButtonHide()
+            StarShake1.StarShake()
             LabelEnd.text = ("You are correct")
         }
         else {
             QuestionLabel.textColor = UIColor .redColor()
-            QuestionLabel.textColor = UIColor .blackColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
             
         }
         
@@ -214,12 +239,13 @@ class ViewController: UIViewController {
         if (CorrectAnswer == "1"){
             UnHide()
             ButtonHide()
+            StarShake1.StarShake()
             LabelEnd.text = ("You are correct")
         }
         else {
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
-                self.QuestionLabel.textColor = UIColor .blackColor()
+                self.QuestionLabel.textColor = UIColor .whiteColor()
             }
         }
         
@@ -229,12 +255,13 @@ class ViewController: UIViewController {
         if (CorrectAnswer == "2"){
             UnHide()
             ButtonHide()
+            StarShake1.StarShake()
             LabelEnd.text = ("You are correct")
         }
         else {
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
-                self.QuestionLabel.textColor = UIColor .blackColor()
+                self.QuestionLabel.textColor = UIColor .whiteColor()
             }
         }
         
@@ -244,12 +271,13 @@ class ViewController: UIViewController {
         if (CorrectAnswer == "3"){
             UnHide()
             ButtonHide()
+            StarShake1.StarShake()
             LabelEnd.text = ("You are correct")
         }
         else {
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
-                self.QuestionLabel.textColor = UIColor .blackColor()
+                self.QuestionLabel.textColor = UIColor .whiteColor()
             }
         }
     }
@@ -258,12 +286,13 @@ class ViewController: UIViewController {
         if (CorrectAnswer == "4"){
             UnHide()
             ButtonHide()
+            StarShake1.StarShake()
             LabelEnd.text = ("You are correct")
         }
         else {
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
-                self.QuestionLabel.textColor = UIColor .blackColor()
+                self.QuestionLabel.textColor = UIColor .whiteColor()
             }
         }
     }
@@ -291,3 +320,4 @@ class ViewController: UIViewController {
     
 
 }
+

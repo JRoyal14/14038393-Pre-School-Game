@@ -27,6 +27,10 @@
 		8831106B1E732A76003FB993 /* number8.png in Resources */ = {isa = PBXBuildFile; fileRef = 883110611E732A76003FB993 /* number8.png */; };
 		8831106C1E732A76003FB993 /* number9.png in Resources */ = {isa = PBXBuildFile; fileRef = 883110621E732A76003FB993 /* number9.png */; };
 		8831106E1E7344DB003FB993 /* play_again.png in Resources */ = {isa = PBXBuildFile; fileRef = 8831106D1E7344DB003FB993 /* play_again.png */; };
+		889404061E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889404051E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg */; };
+		889404081E82DC9100C71C4B /* star_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = 889404071E82DC9100C71C4B /* star_kids.png */; };
+		8894040A1E82EB6E00C71C4B /* ShakingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889404091E82EB6E00C71C4B /* ShakingImage.swift */; };
+		8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894040B1E82F7C800C71C4B /* StarMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		883110611E732A76003FB993 /* number8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number8.png; path = ../images/number8.png; sourceTree = "<group>"; };
 		883110621E732A76003FB993 /* number9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number9.png; path = ../images/number9.png; sourceTree = "<group>"; };
 		8831106D1E7344DB003FB993 /* play_again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_again.png; path = ../images/play_again.png; sourceTree = "<group>"; };
+		889404051E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg"; path = "../images/Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg"; sourceTree = "<group>"; };
+		889404071E82DC9100C71C4B /* star_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_kids.png; path = ../../images/star_kids.png; sourceTree = "<group>"; };
+		889404091E82EB6E00C71C4B /* ShakingImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakingImage.swift; sourceTree = "<group>"; };
+		8894040B1E82F7C800C71C4B /* StarMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarMovement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		8831101D1E732619003FB993 = {
 			isa = PBXGroup;
 			children = (
+				889404051E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg */,
 				88096FEA1E75C1E900CEB03C /* apple.png */,
 				883110591E732A76003FB993 /* number0.png */,
 				8831105A1E732A76003FB993 /* number1.png */,
@@ -139,6 +148,9 @@
 				883110291E732619003FB993 /* AppDelegate.swift */,
 				8831102B1E732619003FB993 /* ViewController.swift */,
 				8831102D1E732619003FB993 /* Main.storyboard */,
+				889404091E82EB6E00C71C4B /* ShakingImage.swift */,
+				8894040B1E82F7C800C71C4B /* StarMovement.swift */,
+				889404071E82DC9100C71C4B /* star_kids.png */,
 				883110301E732619003FB993 /* Assets.xcassets */,
 				883110321E732619003FB993 /* LaunchScreen.storyboard */,
 				883110351E732619003FB993 /* Info.plist */,
@@ -276,6 +288,7 @@
 				883110681E732A76003FB993 /* number5.png in Resources */,
 				883110641E732A76003FB993 /* number1.png in Resources */,
 				883110671E732A76003FB993 /* number4.png in Resources */,
+				889404061E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg in Resources */,
 				88096FED1E75C2B000CEB03C /* plate_white.png in Resources */,
 				883110311E732619003FB993 /* Assets.xcassets in Resources */,
 				8831102F1E732619003FB993 /* Main.storyboard in Resources */,
@@ -283,6 +296,7 @@
 				883110631E732A76003FB993 /* number0.png in Resources */,
 				883110651E732A76003FB993 /* number2.png in Resources */,
 				8831106B1E732A76003FB993 /* number8.png in Resources */,
+				889404081E82DC9100C71C4B /* star_kids.png in Resources */,
 				8831106C1E732A76003FB993 /* number9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8894040A1E82EB6E00C71C4B /* ShakingImage.swift in Sources */,
 				8831102C1E732619003FB993 /* ViewController.swift in Sources */,
+				8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */,
 				8831102A1E732619003FB993 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
