@@ -31,6 +31,8 @@
 		889404081E82DC9100C71C4B /* star_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = 889404071E82DC9100C71C4B /* star_kids.png */; };
 		8894040A1E82EB6E00C71C4B /* ShakingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889404091E82EB6E00C71C4B /* ShakingImage.swift */; };
 		8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894040B1E82F7C800C71C4B /* StarMovement.swift */; };
+		88BC9A471E832A7E00188436 /* Sliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC9A461E832A7E00188436 /* Sliding.swift */; };
+		88BC9A491E833C6400188436 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC9A481E833C6400188436 /* ViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		889404071E82DC9100C71C4B /* star_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_kids.png; path = ../../images/star_kids.png; sourceTree = "<group>"; };
 		889404091E82EB6E00C71C4B /* ShakingImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakingImage.swift; sourceTree = "<group>"; };
 		8894040B1E82F7C800C71C4B /* StarMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarMovement.swift; sourceTree = "<group>"; };
+		88BC9A461E832A7E00188436 /* Sliding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sliding.swift; sourceTree = "<group>"; };
+		88BC9A481E833C6400188436 /* ViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTwo.swift; path = ../ViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +149,12 @@
 		883110281E732619003FB993 /* Pre-School Game */ = {
 			isa = PBXGroup;
 			children = (
+				88BC9A481E833C6400188436 /* ViewTwo.swift */,
 				883110291E732619003FB993 /* AppDelegate.swift */,
 				8831102B1E732619003FB993 /* ViewController.swift */,
 				8831102D1E732619003FB993 /* Main.storyboard */,
 				889404091E82EB6E00C71C4B /* ShakingImage.swift */,
+				88BC9A461E832A7E00188436 /* Sliding.swift */,
 				8894040B1E82F7C800C71C4B /* StarMovement.swift */,
 				889404071E82DC9100C71C4B /* star_kids.png */,
 				883110301E732619003FB993 /* Assets.xcassets */,
@@ -244,6 +250,7 @@
 				TargetAttributes = {
 					883110251E732619003FB993 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 93295G4HZU;
 					};
 					883110391E732619003FB993 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -326,6 +333,8 @@
 				8831102C1E732619003FB993 /* ViewController.swift in Sources */,
 				8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */,
 				8831102A1E732619003FB993 /* AppDelegate.swift in Sources */,
+				88BC9A471E832A7E00188436 /* Sliding.swift in Sources */,
+				88BC9A491E833C6400188436 /* ViewTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Pre-School Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "University-Of-Hertfordshrie.Pre-School-Game";
@@ -481,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Pre-School Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "University-Of-Hertfordshrie.Pre-School-Game";

@@ -39,8 +39,8 @@ class ShakingImage: UIImageView {
 
     func shake() {
         let animation = CABasicAnimation(keyPath: "position")
-        animation.duration = 0.05
-        animation.repeatCount = 10
+        animation.duration = 0.7
+        animation.repeatCount = 2
         animation.autoreverses = true
         animation.fromValue = NSValue(CGPoint: CGPoint(x: self.center.x - 4, y: self.center.y))
         animation.toValue = NSValue( CGPoint: CGPoint(x: self.center.x + 4, y: self.center.y))

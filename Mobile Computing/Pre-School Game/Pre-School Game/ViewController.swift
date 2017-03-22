@@ -83,6 +83,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var StarShake1: StarMovement!
     
+    @IBOutlet weak var Play: UIButton!
     
     
     
@@ -91,25 +92,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        RandomQuestions()
+        
         Hide()
-        Apple1.shake()
-        Apple2.shake()
-        Apple3.shake()
-        Apple4.shake()
-        Apple5.shake()
-        Apple6.shake()
-        Apple7.shake()
-        Apple8.shake()
-        Apple9.shake()
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
     
     func RandomQuestions(){
         
@@ -144,10 +136,15 @@ class ViewController: UIViewController {
         
         }
     }
+    func playhide() {
+    Play.hidden = true
+    QuestionLabel.hidden = false
+    }
     func Hide(){
         LabelEnd.hidden = true
         Next.hidden = true
         StarShake1.hidden = true
+        QuestionLabel.hidden = true
     }
     func UnHide(){
         LabelEnd.hidden = false
@@ -316,6 +313,22 @@ class ViewController: UIViewController {
         RandomQuestions()
         Hide()
         ButtonUnHide()
+    }
+    
+    @IBAction func PlayAction(sender: AnyObject) {
+        
+        RandomQuestions()
+        playhide()
+        Apple1.shake()
+        Apple2.shake()
+        Apple3.shake()
+        Apple4.shake()
+        Apple5.shake()
+        Apple6.shake()
+        Apple7.shake()
+        Apple8.shake()
+        Apple9.shake()
+        
     }
     
 
