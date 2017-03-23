@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
+
+
 
 class DraggedImageView: UIImageView {
 
     var startLocation: CGPoint?
+    
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -46,25 +50,46 @@ class ViewController: UIViewController {
     
     @IBOutlet var QuestionLabel: UILabel!
     
-    @IBOutlet var Button0: UIButton!
-
-    @IBOutlet var Button1: UIButton!
     
-    @IBOutlet var Button2: UIButton!
+    @IBOutlet weak var Button0: UIButtonShake!
     
-    @IBOutlet var Button3: UIButton!
+    //@IBOutlet var Button0: UIButton!
     
-    @IBOutlet var Button4: UIButton!
+    @IBOutlet weak var Button1: UIButtonShake!
     
-    @IBOutlet var Button5: UIButton!
+    //@IBOutlet var Button1: UIButton!
     
-    @IBOutlet var Button6: UIButton!
+    @IBOutlet weak var Button2: UIButtonShake!
     
-    @IBOutlet var Button7: UIButton!
+    //@IBOutlet var Button2: UIButton!
     
-    @IBOutlet var Button8: UIButton!
+    @IBOutlet weak var Button3: UIButtonShake!
     
-    @IBOutlet var Button9: UIButton!
+    //@IBOutlet var Button3: UIButton!
+    
+    @IBOutlet weak var Button4: UIButtonShake!
+    
+    //@IBOutlet var Button4: UIButton!
+    
+    @IBOutlet weak var Button5: UIButtonShake!
+    
+    //@IBOutlet var Button5: UIButton!
+    
+    @IBOutlet weak var Button6: UIButtonShake!
+    
+    //@IBOutlet var Button6: UIButton!
+    
+    @IBOutlet weak var Button7: UIButtonShake!
+    
+    //@IBOutlet var Button7: UIButton!
+    
+    @IBOutlet weak var Button8: UIButtonShake!
+    
+    //@IBOutlet var Button8: UIButton!
+    
+    @IBOutlet weak var Button9: UIButtonShake!
+    
+    //@IBOutlet var Button9: UIButton!
     
     @IBOutlet var LabelEnd: UILabel!
     
@@ -85,15 +110,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Play: UIButton!
     
-    
-    
     var CorrectAnswer = String()
+    
+    var ButtonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("welldone", ofType:"mp3")!)
+    
+    var ButtonAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    
         // Do any additional setup after loading the view, typically from a nib.
         
+        ButtonAudioPlayer =  try! AVAudioPlayer(contentsOfURL: ButtonAudioURL)
+        
         Hide()
+        ButtonUnHide()
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -105,7 +141,7 @@ class ViewController: UIViewController {
     
     func RandomQuestions(){
         
-        var RandomNumber = arc4random() % 4
+        var RandomNumber = arc4random() % 9
         RandomNumber += 1
         
         switch(RandomNumber){
@@ -128,6 +164,32 @@ class ViewController: UIViewController {
         case 4:
             QuestionLabel.text = "2+2 = ?"
             CorrectAnswer = "4"
+            
+            break
+        case 5:
+            QuestionLabel.text = "3+2 = ?"
+            CorrectAnswer = "5"
+            
+            break
+        case 6:
+            QuestionLabel.text = "3+3 = ?"
+            CorrectAnswer = "6"
+            
+            break
+        case 7:
+            QuestionLabel.text = "4+3 = ?"
+            CorrectAnswer = "7"
+            
+            break
+        case 8:
+            QuestionLabel.text = "5+3 = ?"
+            CorrectAnswer = "8"
+            
+            break
+        case 9:
+            QuestionLabel.text = "5+4 = ?"
+            CorrectAnswer = "9"
+            
             break
         
         
@@ -220,14 +282,74 @@ class ViewController: UIViewController {
             UnHide()
             ButtonHide()
             StarShake1.StarShake()
-            LabelEnd.text = ("You are correct")
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
         }
-        else {
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
                 self.QuestionLabel.textColor = UIColor .whiteColor()
             }
+        }
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
             
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
         }
         
     }
@@ -237,15 +359,77 @@ class ViewController: UIViewController {
             UnHide()
             ButtonHide()
             StarShake1.StarShake()
-            LabelEnd.text = ("You are correct")
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
         }
-        else {
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
                 self.QuestionLabel.textColor = UIColor .whiteColor()
             }
         }
-        
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+    
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+    
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+
+    
     }
     
     func Button2Action(sender: AnyObject) {
@@ -253,9 +437,70 @@ class ViewController: UIViewController {
             UnHide()
             ButtonHide()
             StarShake1.StarShake()
-            LabelEnd.text = ("You are correct")
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
         }
-        else {
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
                 self.QuestionLabel.textColor = UIColor .whiteColor()
@@ -269,9 +514,70 @@ class ViewController: UIViewController {
             UnHide()
             ButtonHide()
             StarShake1.StarShake()
-            LabelEnd.text = ("You are correct")
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
         }
-        else {
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
                 self.QuestionLabel.textColor = UIColor .whiteColor()
@@ -284,9 +590,146 @@ class ViewController: UIViewController {
             UnHide()
             ButtonHide()
             StarShake1.StarShake()
-            LabelEnd.text = ("You are correct")
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
         }
-        else {
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+    }
+    }
+    
+    func Button5Action(sender: AnyObject) {
+        if (CorrectAnswer == "5"){
+            UnHide()
+            ButtonHide()
+            StarShake1.StarShake()
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
+        }
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
             QuestionLabel.textColor = UIColor .redColor()
             delay(0.5){
                 self.QuestionLabel.textColor = UIColor .whiteColor()
@@ -294,25 +737,315 @@ class ViewController: UIViewController {
         }
     }
     
-    func Button5Action(sender: AnyObject) {
-    }
-    
     func Button6Action(sender: AnyObject) {
+        if (CorrectAnswer == "6"){
+            UnHide()
+            ButtonHide()
+            StarShake1.StarShake()
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
+        }
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
     }
     
     func Button7Action(sender: AnyObject) {
+        if (CorrectAnswer == "7"){
+            UnHide()
+            ButtonHide()
+            StarShake1.StarShake()
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
+        }
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
     }
     
     func Button8Action(sender: AnyObject) {
+        if (CorrectAnswer == "8"){
+            UnHide()
+            ButtonHide()
+            StarShake1.StarShake()
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
+        }
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "9"){
+            Button9.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
     }
     
     func Button9Action(sender: AnyObject) {
+        if (CorrectAnswer == "9"){
+            UnHide()
+            ButtonHide()
+            StarShake1.StarShake()
+            LabelEnd.text = ("Well Done!")
+            QuestionLabel.text = (CorrectAnswer)
+            ButtonAudioPlayer.play()
+        }
+        else if (CorrectAnswer == "0"){
+            Button0.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "1"){
+            Button1.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "2"){
+            Button2.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+            
+        else if (CorrectAnswer == "3"){
+            Button3.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "4"){
+            Button4.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "5"){
+            Button5.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "6"){
+            Button6.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "7"){
+            Button7.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
+        else if (CorrectAnswer == "8"){
+            Button8.shakeB()
+            QuestionLabel.textColor = UIColor .redColor()
+            delay(0.5){
+                self.QuestionLabel.textColor = UIColor .whiteColor()
+            }
+        }
     }
     
     func Next(sender: AnyObject) {
         RandomQuestions()
         Hide()
         ButtonUnHide()
+        playhide()
     }
     
     @IBAction func PlayAction(sender: AnyObject) {
@@ -328,6 +1061,7 @@ class ViewController: UIViewController {
         Apple7.shake()
         Apple8.shake()
         Apple9.shake()
+        
         
     }
     

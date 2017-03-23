@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88051DB51E842AB200EA479B /* welldone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88051DB41E842AB200EA479B /* welldone.mp3 */; };
+		88051DB71E84337700EA479B /* UIButtonShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88051DB61E84337700EA479B /* UIButtonShake.swift */; };
+		88051DB91E844E9600EA479B /* Tittle.png in Resources */ = {isa = PBXBuildFile; fileRef = 88051DB81E844E9600EA479B /* Tittle.png */; };
 		88096FEB1E75C1E900CEB03C /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 88096FEA1E75C1E900CEB03C /* apple.png */; };
 		88096FED1E75C2B000CEB03C /* plate_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 88096FEC1E75C2B000CEB03C /* plate_white.png */; };
 		8831102A1E732619003FB993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883110291E732619003FB993 /* AppDelegate.swift */; };
@@ -33,6 +36,9 @@
 		8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894040B1E82F7C800C71C4B /* StarMovement.swift */; };
 		88BC9A471E832A7E00188436 /* Sliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC9A461E832A7E00188436 /* Sliding.swift */; };
 		88BC9A491E833C6400188436 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC9A481E833C6400188436 /* ViewTwo.swift */; };
+		88BC9A4F1E83579900188436 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC9A4E1E83579900188436 /* ViewController1.swift */; };
+		88BC9A511E835CFA00188436 /* Click2-PNG-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BC9A501E835CFA00188436 /* Click2-PNG-Image.png */; };
+		88BC9A551E835F3200188436 /* Click3_hand-o-up copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BC9A541E835F3200188436 /* Click3_hand-o-up copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88051DB41E842AB200EA479B /* welldone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = welldone.mp3; path = ../welldone.mp3; sourceTree = "<group>"; };
+		88051DB61E84337700EA479B /* UIButtonShake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonShake.swift; sourceTree = "<group>"; };
+		88051DB81E844E9600EA479B /* Tittle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tittle.png; path = ../../../Tittle.png; sourceTree = "<group>"; };
 		88096FEA1E75C1E900CEB03C /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../images/apple.png; sourceTree = "<group>"; };
 		88096FEC1E75C2B000CEB03C /* plate_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plate_white.png; path = ../images/plate_white.png; sourceTree = "<group>"; };
 		883110261E732619003FB993 /* Pre-School Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pre-School Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +94,9 @@
 		8894040B1E82F7C800C71C4B /* StarMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarMovement.swift; sourceTree = "<group>"; };
 		88BC9A461E832A7E00188436 /* Sliding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sliding.swift; sourceTree = "<group>"; };
 		88BC9A481E833C6400188436 /* ViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTwo.swift; path = ../ViewTwo.swift; sourceTree = "<group>"; };
+		88BC9A4E1E83579900188436 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		88BC9A501E835CFA00188436 /* Click2-PNG-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Click2-PNG-Image.png"; path = "Pre-School Game/Click2-PNG-Image.png"; sourceTree = "<group>"; };
+		88BC9A541E835F3200188436 /* Click3_hand-o-up copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Click3_hand-o-up copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 		8831101D1E732619003FB993 = {
 			isa = PBXGroup;
 			children = (
+				88BC9A541E835F3200188436 /* Click3_hand-o-up copy.png */,
 				889404051E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg */,
 				88096FEA1E75C1E900CEB03C /* apple.png */,
 				883110591E732A76003FB993 /* number0.png */,
@@ -123,11 +136,13 @@
 				8831105B1E732A76003FB993 /* number2.png */,
 				8831105C1E732A76003FB993 /* number3.png */,
 				8831105D1E732A76003FB993 /* number4.png */,
+				88051DB41E842AB200EA479B /* welldone.mp3 */,
 				8831105E1E732A76003FB993 /* number5.png */,
 				8831105F1E732A76003FB993 /* number6.png */,
 				883110601E732A76003FB993 /* number7.png */,
 				883110611E732A76003FB993 /* number8.png */,
 				883110621E732A76003FB993 /* number9.png */,
+				88BC9A501E835CFA00188436 /* Click2-PNG-Image.png */,
 				8831106D1E7344DB003FB993 /* play_again.png */,
 				883110281E732619003FB993 /* Pre-School Game */,
 				8831103D1E732619003FB993 /* Pre-School GameTests */,
@@ -152,7 +167,10 @@
 				88BC9A481E833C6400188436 /* ViewTwo.swift */,
 				883110291E732619003FB993 /* AppDelegate.swift */,
 				8831102B1E732619003FB993 /* ViewController.swift */,
+				88BC9A4E1E83579900188436 /* ViewController1.swift */,
 				8831102D1E732619003FB993 /* Main.storyboard */,
+				88051DB81E844E9600EA479B /* Tittle.png */,
+				88051DB61E84337700EA479B /* UIButtonShake.swift */,
 				889404091E82EB6E00C71C4B /* ShakingImage.swift */,
 				88BC9A461E832A7E00188436 /* Sliding.swift */,
 				8894040B1E82F7C800C71C4B /* StarMovement.swift */,
@@ -294,14 +312,18 @@
 				88096FEB1E75C1E900CEB03C /* apple.png in Resources */,
 				883110681E732A76003FB993 /* number5.png in Resources */,
 				883110641E732A76003FB993 /* number1.png in Resources */,
+				88051DB91E844E9600EA479B /* Tittle.png in Resources */,
 				883110671E732A76003FB993 /* number4.png in Resources */,
 				889404061E82DB5500C71C4B /* Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg in Resources */,
 				88096FED1E75C2B000CEB03C /* plate_white.png in Resources */,
 				883110311E732619003FB993 /* Assets.xcassets in Resources */,
 				8831102F1E732619003FB993 /* Main.storyboard in Resources */,
+				88BC9A511E835CFA00188436 /* Click2-PNG-Image.png in Resources */,
 				8831106A1E732A76003FB993 /* number7.png in Resources */,
 				883110631E732A76003FB993 /* number0.png in Resources */,
+				88051DB51E842AB200EA479B /* welldone.mp3 in Resources */,
 				883110651E732A76003FB993 /* number2.png in Resources */,
+				88BC9A551E835F3200188436 /* Click3_hand-o-up copy.png in Resources */,
 				8831106B1E732A76003FB993 /* number8.png in Resources */,
 				889404081E82DC9100C71C4B /* star_kids.png in Resources */,
 				8831106C1E732A76003FB993 /* number9.png in Resources */,
@@ -333,6 +355,8 @@
 				8831102C1E732619003FB993 /* ViewController.swift in Sources */,
 				8894040C1E82F7C800C71C4B /* StarMovement.swift in Sources */,
 				8831102A1E732619003FB993 /* AppDelegate.swift in Sources */,
+				88051DB71E84337700EA479B /* UIButtonShake.swift in Sources */,
+				88BC9A4F1E83579900188436 /* ViewController1.swift in Sources */,
 				88BC9A471E832A7E00188436 /* Sliding.swift in Sources */,
 				88BC9A491E833C6400188436 /* ViewTwo.swift in Sources */,
 			);

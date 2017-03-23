@@ -5,30 +5,82 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Two-->
+        <!--View Controller1-->
         <scene sceneID="OOO-TX-I4S">
             <objects>
-                <viewController id="CbK-W8-pUQ" customClass="ViewTwo" customModule="Pre_School_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CbK-W8-pUQ" customClass="ViewController1" customModule="Pre_School_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URo-xM-Nrj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg" id="EZO-tj-Eqr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BtK-PN-1c9">
-                                <rect key="frame" x="142" y="328" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="137" y="296" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="play_again.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="q4s-Tc-YA9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="uNK-XT-sQe" customClass="StarMovement" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="142" y="84" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="xec-WT-jiG" customClass="StarMovement" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="44" y="424" width="76" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Click3_hand-o-up copy.png" id="kUv-XL-zqz" customClass="StarMovement" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="53" y="475" width="71" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="tgC-Sj-XVN">
+                                <rect key="frame" x="20" y="33" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="D6c-SR-bzm">
+                                <rect key="frame" x="265" y="147" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number1.png" id="Zw5-SN-chX">
+                                <rect key="frame" x="45" y="58" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number2.png" id="Sh8-Do-BWu">
+                                <rect key="frame" x="167" y="115" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number3.png" id="xVV-UL-pKz">
+                                <rect key="frame" x="290" y="172" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87r-JO-Nh2">
+                                <rect key="frame" x="59" y="220" width="257" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Shooting Stars.">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.99936443919156692" blue="0.97627770126295665" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="ArialRoundedMTBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BigStar" destination="uNK-XT-sQe" id="hfy-0G-bgZ"/>
+                        <outlet property="Click" destination="kUv-XL-zqz" id="CqU-Ng-arh"/>
+                        <outlet property="SmallStar" destination="xec-WT-jiG" id="2sx-Cp-PO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzG-OE-DVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="ehs-96-vAq" customClass="StarMovement" customModule="Pre_School_Game" customModuleProvider="target">
-                                <rect key="frame" x="110" y="20" width="154" height="147"/>
+                                <rect key="frame" x="110" y="20" width="154" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ie5-aW-jB0">
@@ -57,7 +109,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vt7-tp-mGu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vt7-tp-mGu" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="1" y="20" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="number0.png"/>
@@ -65,7 +117,7 @@
                                     <action selector="Button0Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpM-vt-Wyl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LDO-XM-iJT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LDO-XM-iJT" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="80" y="20" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="number1.png"/>
@@ -73,23 +125,7 @@
                                     <action selector="Button1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUz-eE-srE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ysV-Lm-RNl">
-                                <rect key="frame" x="158" y="20" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="number2.png"/>
-                                <connections>
-                                    <action selector="Button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nTi-s5-31A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5ND-wS-Dps">
-                                <rect key="frame" x="237" y="20" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="number3.png"/>
-                                <connections>
-                                    <action selector="Button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgC-6I-tPf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SSm-wE-yTa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SSm-wE-yTa" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="80" y="122" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="number6.png"/>
@@ -97,31 +133,7 @@
                                     <action selector="Button6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KS2-8B-cFO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oRe-TW-2Yt">
-                                <rect key="frame" x="158" y="122" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="number7.png"/>
-                                <connections>
-                                    <action selector="Button7Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="siB-75-irY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XXJ-bP-HQm">
-                                <rect key="frame" x="237" y="122" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="number8.png"/>
-                                <connections>
-                                    <action selector="Button8Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEo-rn-m8j"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iT9-EI-OQ9">
-                                <rect key="frame" x="315" y="122" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="number9.png"/>
-                                <connections>
-                                    <action selector="Button9Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJb-zO-Yhy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FaE-PX-O8e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FaE-PX-O8e" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="1" y="122" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="number5.png"/>
@@ -136,14 +148,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x19-N2-JWQ">
-                                <rect key="frame" x="143" y="327" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next Question Please" image="play_again.png"/>
-                                <connections>
-                                    <action selector="Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7X-4T-e85"/>
-                                </connections>
-                            </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_kids.png" id="tii-lG-kaQ" customClass="ShakingImage" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="20" y="592" width="57" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -180,20 +184,68 @@
                                 <rect key="frame" x="302" y="529" width="57" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Khn-Gj-Y3H">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="30T-h4-8Gh">
+                                <rect key="frame" x="138" y="306" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play_again.png"/>
+                                <connections>
+                                    <action selector="PlayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="En8-Sb-xZA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x19-N2-JWQ">
+                                <rect key="frame" x="142" y="311" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Question Please" image="play_again.png"/>
+                                <connections>
+                                    <action selector="Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7X-4T-e85"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ysV-Lm-RNl" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="158" y="20" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number2.png"/>
+                                <connections>
+                                    <action selector="Button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nTi-s5-31A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5ND-wS-Dps" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="237" y="20" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number3.png"/>
+                                <connections>
+                                    <action selector="Button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgC-6I-tPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oRe-TW-2Yt" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="158" y="122" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number7.png"/>
+                                <connections>
+                                    <action selector="Button7Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="siB-75-irY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XXJ-bP-HQm" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="237" y="122" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number8.png"/>
+                                <connections>
+                                    <action selector="Button8Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEo-rn-m8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iT9-EI-OQ9" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
+                                <rect key="frame" x="315" y="122" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number9.png"/>
+                                <connections>
+                                    <action selector="Button9Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJb-zO-Yhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Khn-Gj-Y3H" customClass="UIButtonShake" customModule="Pre_School_Game" customModuleProvider="target">
                                 <rect key="frame" x="315" y="20" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="number4.png"/>
                                 <connections>
                                     <action selector="Button4Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57O-XA-mHB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="30T-h4-8Gh">
-                                <rect key="frame" x="138" y="327" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="play_again.png"/>
-                                <connections>
-                                    <action selector="PlayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="En8-Sb-xZA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,16 +262,16 @@
                         <outlet property="Apple7" destination="QTC-xX-XPW" id="6w1-aM-jqh"/>
                         <outlet property="Apple8" destination="hUx-ak-wLZ" id="CEq-SH-bj1"/>
                         <outlet property="Apple9" destination="BEf-Oy-DeO" id="8aM-2Y-FJf"/>
-                        <outlet property="Button0" destination="vt7-tp-mGu" id="eHD-hO-K2J"/>
-                        <outlet property="Button1" destination="LDO-XM-iJT" id="fCS-us-9X0"/>
-                        <outlet property="Button2" destination="ysV-Lm-RNl" id="6Hk-aV-ZQ1"/>
-                        <outlet property="Button3" destination="5ND-wS-Dps" id="XLW-pl-kQ1"/>
-                        <outlet property="Button4" destination="Khn-Gj-Y3H" id="amk-GL-XkT"/>
-                        <outlet property="Button5" destination="FaE-PX-O8e" id="BZ1-ll-xPf"/>
-                        <outlet property="Button6" destination="SSm-wE-yTa" id="4Rm-dk-TPR"/>
-                        <outlet property="Button7" destination="oRe-TW-2Yt" id="fa4-9z-3QO"/>
-                        <outlet property="Button8" destination="XXJ-bP-HQm" id="bAK-kO-Olz"/>
-                        <outlet property="Button9" destination="iT9-EI-OQ9" id="6P5-Wk-2p0"/>
+                        <outlet property="Button0" destination="vt7-tp-mGu" id="vep-Sb-5gv"/>
+                        <outlet property="Button1" destination="LDO-XM-iJT" id="xJe-Kq-ZyD"/>
+                        <outlet property="Button2" destination="ysV-Lm-RNl" id="UMh-6X-cCE"/>
+                        <outlet property="Button3" destination="5ND-wS-Dps" id="Ovt-n6-l9t"/>
+                        <outlet property="Button4" destination="Khn-Gj-Y3H" id="Idh-Ht-QvB"/>
+                        <outlet property="Button5" destination="FaE-PX-O8e" id="Avu-pj-IYo"/>
+                        <outlet property="Button6" destination="SSm-wE-yTa" id="Hmx-B4-KGT"/>
+                        <outlet property="Button7" destination="oRe-TW-2Yt" id="CU2-tw-7TT"/>
+                        <outlet property="Button8" destination="XXJ-bP-HQm" id="jCR-5y-qbU"/>
+                        <outlet property="Button9" destination="iT9-EI-OQ9" id="uJ8-W0-tIW"/>
                         <outlet property="LabelEnd" destination="VL3-7l-2ql" id="dU7-yi-j4C"/>
                         <outlet property="Next" destination="x19-N2-JWQ" id="wPX-fk-ubM"/>
                         <outlet property="Play" destination="30T-h4-8Gh" id="4Kx-Zt-6Pg"/>
@@ -233,6 +285,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Click3_hand-o-up copy.png" width="128" height="128"/>
         <image name="Stars And Moon Winter Mountain Landscape iPhone 6+ HD Wallpaper.jpg" width="1080" height="1920"/>
         <image name="number0.png" width="256" height="256"/>
         <image name="number1.png" width="256" height="256"/>
